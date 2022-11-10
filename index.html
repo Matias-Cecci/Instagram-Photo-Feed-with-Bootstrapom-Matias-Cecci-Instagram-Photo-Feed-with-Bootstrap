@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Photo Feed with Bootstrap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7f62793347.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light ">
+            <div class="container-fluid g-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+                </div>
+                <!-- Button trigger modal -->
+                <div class="d-grid col-2 ">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel "
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-4" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body g-5">
+                                <p class="fw-bold">Caption:</p>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea">Add the caption of your site here</label>
+                                </div>
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa-solid fa-camera"></i>
+                                </button>
+                                <button type="button" class="btn btn-light">
+                                <i class="fa-solid fa-location-dot"></i>
+                                </button>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+          <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    <i class="fa-solid fa-table-cells"></i>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    <i class="fa-solid fa-square"></i>
+                </button>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="container text-center">
+                    <div class="row row-cols-3 g-2">
+                        <div class="col-4">
+                            <img class="img-fluid" src="https://images.pexels.com/photos/12631953/pexels-photo-12631953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto1">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="https://images.pexels.com/photos/13270038/pexels-photo-13270038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto2">  
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="https://images.pexels.com/photos/7465530/pexels-photo-7465530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto2">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="https://images.pexels.com/photos/7856277/pexels-photo-7856277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto2">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="https://images.pexels.com/photos/13394871/pexels-photo-13394871.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto2">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="https://images.pexels.com/photos/11466479/pexels-photo-11466479.jpeg?cs=srgb&dl=pexels-herbert-g%C3%B6tsch-11466479.jpg&fm=jpg" alt="foto2">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="https://images.pexels.com/photos/9294288/pexels-photo-9294288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto2">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="https://images.pexels.com/photos/7483187/pexels-photo-7483187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto2"  >
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="https://images.pexels.com/photos/179221/pexels-photo-179221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto2">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-6">
+                            <div class="border mt-3">
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="align-items-center">Esperando la comida </h2>
+                                    <p class="date align-items-start">02/25</p>
+                                </div>
+                                <div class="foto-post">
+                                    <img class="img-fluid" src="https://images.pexels.com/photos/12631953/pexels-photo-12631953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto1">    
+                                </div>
+                                <div class="footer-post">
+                                    <p class="fw-bold">204 likes</p>
+                                    <p>
+                                        This is an example that of a very good photo that you can post on instagram
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-6">
+                            <div class="border mt-3">
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="align-items-center">Por favor no te vayas</h2>
+                                    <p class="date align-items-start">09/14</p>
+                                </div>
+                                <div class="foto-post">
+                                    <img class="img-fluid" src="https://images.pexels.com/photos/13394871/pexels-photo-13394871.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto2">    
+                                </div>
+                                <div class="footer-post">
+                                    <p class="fw-bold">6009 likes</p>
+                                    <p>
+                                        This is an example that of a very good photo that you can post on instagram
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-6">
+                            <div class="border mt-3">
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="align-items-center">¿Me estás hablando a mi?</h2>
+                                    <p class="date align-items-start">04/20</p>
+                                </div>
+                                <div class="foto-post">
+                                    <img class="img-fluid" src="https://images.pexels.com/photos/7483187/pexels-photo-7483187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto2"  >   
+                                </div>
+                                <div class="footer-post">
+                                    <p class="fw-bold">103 likes</p>
+                                    <p>
+                                        This is an example that of a very good photo that you can post on instagram
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
