@@ -14,9 +14,9 @@
 
 <body>
     <!-- Navbar START -->
-    <div class="container p-0">
+    
         <nav class="navbar navbar-expand-lg bg-light ">
-            <div class="container-fluid g-5">
+            <div class="container-fluid g-5 m-0 p-0 ">
                 <div class="container-fluid">
                     <a class="navbar-brand fw-bold" href="#">
                         <i class="fa-brands fa-instagram"></i>
@@ -24,7 +24,7 @@
                     </a>
                 </div>
                 <!-- Button trigger modal -->
-                <div class="d-grid col-2 ">
+                <div class="d-grid col-auto ">
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Create a new post
                     </button>
@@ -79,29 +79,29 @@
                 </div>
             </div>
         </nav>
-    </div>
+   
     <!-- Navbar END -->
 
     <!-- JavaScript Behavior Start -->
-    <div class="container bg-white p-0">
-          <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                    <i class="fa-solid fa-table-cells"></i>
+    <div class="container-fluid p-0">
+          <ul class="nav nav-tabs d-flex justify-content-center border-0 miBoton" id="myTab" role="tablist">
+            <li class="nav-item  " role="presentation">
+                <button class="nav-link border-0 " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="active">
+                    <i class="fa-solid fa-table-cells  "></i>
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                    <i class="fa-solid fa-square"></i>
+                <button class="nav-link border-0 " id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    <i class="fa-solid fa-square "></i>
                 </button>
             </li>
 
         </ul>
 
         
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                <div class="container text-center">
+        <div class="tab-content " id="myTabContent">
+            <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="container-fluid">
                     <!--The grid with three images by row START-->
                     <div class="row row-cols-3 g-2 mt-3 mb-2 pb-2">
                         <div class="col-4">
@@ -135,11 +135,11 @@
                     <!--The grid with three images by row END-->
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="tab-pane fade " id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                 <div class="container">
                     <!--The grid with one image by row START-->
                     <div class="row justify-content-md-center">
-                        <div class="col-6">
+                        <div class="container-fluid col-6 d-flex justify-content-center">
                             <div class="border mt-3">
                                 <div class="d-flex justify-content-between p-2">
                                     <h2 class="align-items-center">Esperando la comida </h2>
@@ -158,10 +158,10 @@
                         </div>
                     </div>
                     <div class="row justify-content-md-center">
-                        <div class="col-6">
+                        <div class="container-fluid col-6 d-flex justify-content-center">
                             <div class="border mt-3">
-                                <div class="d-flex justify-content-between  p-2">
-                                    <h2 class="align-items-center">Por favor no te vayas</h2>
+                                <div class="d-flex justify-content-between p-2">
+                                    <h2 class="align-items-center">Quedate, no te vayas</h2>
                                     <p class="date align-items-start">09/14</p>
                                 </div>
                                 <div class="foto-post">
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-md-center mb-2">
-                        <div class="col-6 ">
+                        <div class="container-fluid col-6 d-flex justify-content-center">
                             <div class="border mt-3 mb-2">
                                 <div class="d-flex justify-content-between p-2">
                                     <h2 class="align-items-center">¿Me estás hablando a mi?</h2>
